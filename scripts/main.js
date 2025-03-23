@@ -1,20 +1,3 @@
-particlesJS("particles-js", {
-  particles: {
-    number: { value: 50, density: { enable: true, value_area: 800 } },
-    color: { value: "#ff5e00" },
-    shape: { type: "circle" },
-    opacity: { value: 0.5, random: true },
-    size: { value: 3, random: true },
-    line_linked: { enable: false },
-    move: { enable: true, speed: 1, direction: "none", random: true },
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: { onhover: { enable: false } },
-  },
-  retina_detect: true,
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const title = document.querySelector(".title");
   const text = title.textContent;
@@ -35,3 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
     subtitle.style.transition = "opacity 0.5s ease-in-out";
   }, 200);
 });
+
+window.onload = function () {
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50, density: { enable: true, value_area: 800 } },
+      color: { value: "#ff5e00" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5, random: true },
+      size: { value: 3, random: true },
+      line_linked: { enable: false },
+      move: { enable: true, speed: 1, direction: "none", random: true },
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: { onhover: { enable: false } },
+    },
+    retina_detect: true,
+  });
+};

@@ -27,13 +27,21 @@ html {
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
 }
 
 body {
   font-family: "Manrope", sans-serif;
   display: flex;
   flex-direction: column;
+}
+
+#particles-js {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-deep-black);
 }
 
 .icon-check {
@@ -302,6 +310,7 @@ footer p {
   max-width: 800px;
   width: 100%;
   animation: slideInRight 0.5s ease;
+  position: relative;
   z-index: 1;
 }
 
