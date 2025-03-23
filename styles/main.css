@@ -68,6 +68,29 @@ a:focus {
   outline: none;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #2e3436;
+}
+
+th {
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+td {
+  font-weight: 400;
+  color: var(--color-light-gray);
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -79,6 +102,32 @@ header {
 
 header img {
   align-self: flex-end;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-white);
+  padding-left: 10px;
+}
+
+article {
+  background: rgba(46, 52, 54, 0.2);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 94, 0, 0.1);
 }
 
 .navbar {
@@ -109,7 +158,11 @@ header img {
 }
 
 .navbar a:hover {
-  color: #ff5e00;
+  color: var(--color-accent);
+}
+
+article {
+  margin-bottom: 40px;
 }
 
 main {
@@ -138,7 +191,7 @@ main::before {
 }
 
 footer {
-  background-color: #0a0f0f;
+  background-color: var(--color-deep-black);
   padding: 20px 0;
   text-align: center;
   margin-top: auto;
@@ -147,7 +200,7 @@ footer {
 footer p {
   font-weight: 400;
   font-size: 12px;
-  color: #d3d7d8;
+  color: var(--color-light-gray);
   margin: 0;
 }
 
@@ -244,6 +297,81 @@ footer p {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+
+.content-blocks {
+  max-width: 800px;
+  width: 100%;
+  animation: slideInRight 0.5s ease;
+  z-index: 1;
+}
+
+.block {
+  margin-bottom: 20px;
+  border-left: 2px solid rgba(255, 94, 0, 0.3);
+  padding-left: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.block p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-light-gray);
+  margin: 10px 0;
+}
+
+.block strong {
+  color: rgba(255, 94, 0, 0.85);
+  transition: color 0.3s ease;
+}
+
+.block strong:hover {
+  color: rgba(255, 94, 0, 0.7);
+}
+
+.block img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.block:hover {
+  border-left-color: var(--color-accent);
+}
+
+.progress-circle {
+  width: 100px;
+  height: 100px;
+  background: #2e3436; /* Тёмно-серый фон круга */
+  border-radius: 50%;
+  position: relative;
+  margin: 20px 0;
+}
+
+.progress-fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid var(--color-accent);
+  border-radius: 50%;
+  animation: drawCircle 1s ease forwards; /* Эффект рисования */
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Фон позади контента */
+}
+.intro,
+.content-blocks {
+  position: relative;
+  z-index: 1; /* Контент поверх анимации */
+}
+
 @media (max-width: 1024px) {
   .navbar {
     flex-direction: column;
@@ -277,6 +405,19 @@ footer p {
     flex: 0 0 100%;
     max-width: 300px;
   }
+
+  article {
+    padding: 15px;
+  }
+
+  .block {
+    padding-left: 10px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin: 12px 0 8px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -290,6 +431,19 @@ footer p {
 
   .card {
     height: 180px;
+  }
+
+  article {
+    padding: 10px;
+  }
+
+  h2::after {
+    width: 30px;
+  }
+
+  h3 {
+    font-size: 16px;
+    padding-left: 8px;
   }
 }
 
@@ -310,5 +464,38 @@ footer p {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
