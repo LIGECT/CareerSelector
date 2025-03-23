@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/themes/light.css"
+    />
     <title>Войти в IT</title>
   </head>
   <body>
     <header>
       <nav>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="navbar">
           <li><a href="./index.html">Главная</a></li>
           <li><a href="./data-scientist.html">Data Scientist</a></li>
@@ -21,10 +31,11 @@
       </nav>
     </header>
     <main>
-      <h1>Data Analyst</h1>
-      <section>
+      <div id="particles-js"></div>
+      <h1 class="title">Data Analyst</h1>
+      <section class="content-blocks">
         <article>
-          <h2>Кто это</h2>
+          <h2 class="subtitle">Кто это</h2>
 
           <div class="block">
             <p>
@@ -39,9 +50,10 @@
               для принятия решений. Каждый день он изучает информацию о
               предпочтениях клиентов, рассчитывает метрики работы компании,
               формулирует и проверяет гипотезы. Всё это нужно, чтобы получить
-              так называемые <strong>actionable insights</strong> — выводы, на
-              основе которых бизнес сможет принять правильное решение и улучшить
-              продукт.
+              так называемые
+              <strong data-tippy-content="">actionable insights</strong> —
+              выводы, на основе которых бизнес сможет принять правильное решение
+              и улучшить продукт.
             </p>
           </div>
 
@@ -58,8 +70,8 @@
               больше покупают. Но не всё так просто. Спрос может быть
               волнообразным: расти, а потом падать. Данные о продажах и
               состоянии рынка часто распределены по разным системам:
-              <strong>CRM</strong>, сервисам для управления заказами, рекламой и
-              маркетинговыми коммуникациями.
+              <strong data-tippy-content="">CRM</strong>, сервисам для
+              управления заказами, рекламой и маркетинговыми коммуникациями.
             </p>
           </div>
 
@@ -85,25 +97,28 @@
               возможностей для роста и развития. Если аналитик умеет работать с
               базами данных и инструментами визуализации, по уровню зарплаты его
               можно поставить на пол ступени ниже разработчика. А если знает
-              <strong>Python</strong> и умеет работать с моделями — возможно,
-              даже на ступень выше.
+              <strong data-tippy-content="">Python</strong> и умеет работать с
+              моделями — возможно, даже на ступень выше.
             </p>
             <p>
               При этом для работы с основными задачами не обязательно глубоко
               погружаться в программирование и работу с моделями. В отличие от
               дата-сайентиста, для аналитика данных работа с моделями — не
               обязанность, а приятная опция. Хотя многие этой опцией пользуются.
-              Сейчас очень много готовых <strong>библиотек для моделей</strong>,
-              поэтому <strong>машинное обучение</strong> постепенно используется
-              даже в рутинных задачах: классификации,
-              <strong>А/В тестах</strong>, прогнозировании. Поэтому развиваться
-              и строить карьеру можно в любом направлении.
+              Сейчас очень много готовых
+              <strong data-tippy-content="">библиотек для моделей</strong>,
+              поэтому
+              <strong data-tippy-content="">машинное обучение</strong>
+              постепенно используется даже в рутинных задачах: классификации,
+              <strong data-tippy-content="">А/В тестах</strong>,
+              прогнозировании. Поэтому развиваться и строить карьеру можно в
+              любом направлении.
             </p>
           </div>
         </article>
 
         <article>
-          <h2>Что делает Data Analyst</h2>
+          <h2 class="subtitle">Что делает Data Analyst</h2>
 
           <div class="block">
             <p>
@@ -121,9 +136,11 @@
               сэкономить, а где — вложить больше денег. Например, благодаря
               аналитикам Netflix знает, какие сериалы вам предложить, а
               маркетологи — на кого таргетировать рекламу. В работе Data Analyst
-              использует <strong>Excel</strong>, <strong>SQL</strong> (про него
-              ниже) и штуки вроде <strong>Power BI</strong> или
-              <strong>Tableau</strong>, чтобы всё красиво показать.
+              использует <strong data-tippy-content="">Excel</strong>,
+              <strong data-tippy-content="">SQL</strong> (про него ниже) и штуки
+              вроде <strong data-tippy-content="">Power BI</strong> или
+              <strong data-tippy-content="">Tableau</strong>, чтобы всё красиво
+              показать.
             </p>
           </div>
 
@@ -143,10 +160,12 @@
             </p>
             <p>
               Основные рабочие инструменты аналитика —
-              <strong>Sublime Text</strong>, <strong>Jupyter Notebook</strong>,
-              <strong>Google Sheets</strong> или <strong>Excel</strong>. Насчёт
-              последнего: в интернете можно встретить шутки на тему того, что
-              считать таблицы в Excel «большими данными» уже не модно.
+              <strong data-tippy-content="">Sublime Text</strong>,
+              <strong data-tippy-content="">Jupyter Notebook</strong>,
+              <strong data-tippy-content="">Google Sheets</strong> или
+              <strong data-tippy-content="">Excel</strong>. Насчёт последнего: в
+              интернете можно встретить шутки на тему того, что считать таблицы
+              в Excel «большими данными» уже не модно.
             </p>
             <p>
               Это не так: огромное количество компаний по всему миру строят
@@ -154,22 +173,27 @@
               в их распоряжении есть самые продвинутые технологии. В первую
               очередь потому, что это доступные и простые инструменты, которые
               позволяют решать самые сложные задачи. Например, автоматизировать
-              обработку данных в <strong>сводных таблицах</strong>, формировать
-              листы прогноза, чтобы планировать бизнес-процессы, и даже строить
-              <strong>3D-карты</strong>.
+              обработку данных в
+              <strong data-tippy-content="">сводных таблицах</strong>,
+              формировать листы прогноза, чтобы планировать бизнес-процессы, и
+              даже строить <strong data-tippy-content="">3D-карты</strong>.
             </p>
           </div>
 
           <div class="block">
             <p>
               Аналитикам данных также приходится писать запросы в базы данных
-              <strong>SQL</strong>, чтобы получить точечную информацию о
-              процессах или клиентах. Ещё нужно работать с
-              <strong>BI-системами</strong> <strong>Tableau</strong>,
-              <strong>Power BI</strong>, <strong>Looker Studio</strong>, которые
+              <strong data-tippy-content="">SQL</strong>, чтобы получить
+              точечную информацию о процессах или клиентах. Ещё нужно работать с
+              <strong data-tippy-content="">BI-системами</strong>
+              <strong data-tippy-content="">Tableau</strong>,
+              <strong data-tippy-content="">Power BI</strong>,
+              <strong data-tippy-content="">Looker Studio</strong>, которые
               агрегируют данные из различных источников. А иногда приходится
-              даже программировать на языках <strong>Python</strong>,
-              <strong>R</strong> или <strong>Java</strong>, чтобы, например,
+              даже программировать на языках
+              <strong data-tippy-content="">Python</strong>,
+              <strong data-tippy-content="">R</strong> или
+              <strong data-tippy-content="">Java</strong>, чтобы, например,
               автоматизировать поиск по таблицам, сегментировать их или выявить
               закономерности.
             </p>
@@ -203,8 +227,9 @@
           <div class="block">
             <p>
               Например, результатом работы может быть вот такой график с данными
-              по выручке и продажам, собранный в <strong>Tableau</strong> —
-              распространённом сервисе визуализации данных:
+              по выручке и продажам, собранный в
+              <strong data-tippy-content="">Tableau</strong> — распространённом
+              сервисе визуализации данных:
             </p>
             <img
               src="./assets/DataAnalyst/diagram-tableu.webp"
@@ -214,12 +239,13 @@
             />
 
             <p>
-              Приведём другой пример — <strong>тепловую карту</strong>. Это
-              такой способ визуализации данных, в котором их значения
-              отображаются разными цветами. Ниже тепловая карта с данными по
-              объёму спроса в различных геолокациях, собранная в визуальном
-              элементе <strong>Azure Maps</strong> для
-              <strong>Power BI</strong>:
+              Приведём другой пример —
+              <strong data-tippy-content="">тепловую карту</strong>. Это такой
+              способ визуализации данных, в котором их значения отображаются
+              разными цветами. Ниже тепловая карта с данными по объёму спроса в
+              различных геолокациях, собранная в визуальном элементе
+              <strong data-tippy-content="">Azure Maps</strong> для
+              <strong data-tippy-content="">Power BI</strong>:
             </p>
             <img
               src="./assets/DataAnalyst/heat-map.webp"
@@ -231,16 +257,17 @@
         </article>
 
         <article>
-          <h2>Где нужен аналитик данных</h2>
+          <h2 class="subtitle">Где нужен аналитик данных</h2>
 
           <div class="block">
             <p>
               Аналитик данных нужен фактически любой компании, где принимаются
               решения. Дата-аналитики востребованы везде, где есть
-              <strong>диджитал-маркетинг</strong>: в ретейле, IT, телекоме,
-              здравоохранении. Такие специалисты превращают маркетинг в
-              эффективный инструмент — они помогают точно понять, куда уходят
-              деньги, и получить максимальную прибыль при минимальных вложениях.
+              <strong data-tippy-content="">диджитал-маркетинг</strong>: в
+              ретейле, IT, телекоме, здравоохранении. Такие специалисты
+              превращают маркетинг в эффективный инструмент — они помогают точно
+              понять, куда уходят деньги, и получить максимальную прибыль при
+              минимальных вложениях.
             </p>
           </div>
 
@@ -250,36 +277,36 @@
               особенно важна. Например, банки — сфера, где всегда очень много
               информации: пользовательские данные, личные и финансовые. При этом
               управленческие ошибки в банковском секторе очень дороги. Например,
-              если создать неправильную <strong>скоринг-модель</strong> —
-              алгоритм, который оценивает, стоит ли выдавать клиенту кредит, —
-              можно потерять и деньги, и доверие клиентов.
+              если создать неправильную
+              <strong data-tippy-content="">скоринг-модель</strong> — алгоритм,
+              который оценивает, стоит ли выдавать клиенту кредит, — можно
+              потерять и деньги, и доверие клиентов.
             </p>
           </div>
 
           <div class="block">
-            <p>А ещё с помощью аналитики данных можно:</p>
-            <ul>
-              <li>Привлечь и удержать инвестора в стартапе.</li>
-              <li>
-                Бороться с кассовыми разрывами, сопоставляя доходы и расходы
-                компании.
-              </li>
-              <li>
-                Прогнозировать динамику спроса и предложения и точно знать,
-                каких товаров запасти впрок перед Новым годом или Чёрной
-                пятницей.
-              </li>
-              <li>
-                Изучать рынок труда, собирать эффективную команду — например,
-                приглашать только определённых кандидатов на основе статистики
-                найма и увольнения.
-              </li>
-            </ul>
+            <p>
+              А ещё с помощью аналитики данных можно решать множество задач.
+              Например, она помогает привлечь и удержать инвестора в стартапе,
+              показывая перспективы роста и надёжность проекта. Также аналитика
+              позволяет бороться с кассовыми разрывами, сопоставляя доходы и
+              расходы компании, чтобы избежать финансовых проблем.
+            </p>
+            <p>
+              Кроме того, с её помощью можно прогнозировать динамику спроса и
+              предложения. Это особенно полезно, чтобы точно знать, каких
+              товаров запасти впрок перед Новым годом или Чёрной пятницей,
+              избегая переизбытка или нехватки. Ещё одно важное применение —
+              изучение рынка труда. Аналитика помогает собирать эффективную
+              команду, например, приглашать только определённых кандидатов на
+              основе статистики найма и увольнения, что повышает качество
+              подбора персонала.
+            </p>
           </div>
         </article>
 
         <article>
-          <h2>Сколько получает Data Analyst</h2>
+          <h2 class="subtitle">Сколько получает Data Analyst</h2>
 
           <div class="block">
             <p>
@@ -344,7 +371,9 @@
         </article>
 
         <article>
-          <h2>Что нужно знать, чтобы стать аналитиком данных</h2>
+          <h2 class="subtitle">
+            Что нужно знать, чтобы стать аналитиком данных
+          </h2>
 
           <div class="block">
             <p>
@@ -371,13 +400,14 @@
         </article>
 
         <article>
-          <h2>В чём сложности профессии аналитика данных</h2>
+          <h2 class="subtitle">В чём сложности профессии аналитика данных</h2>
 
           <div class="block">
             <p>
               Хороший аналитик должен не просто собирать данные, но и понимать,
               для чего он это делает. Его работа — поставлять не графики, а то,
-              что следует за ними. <strong>Инсайты</strong> — вспышки озарения,
+              что следует за ними.
+              <strong data-tippy-content="">Инсайты</strong> — вспышки озарения,
               которые двигают бизнес вперёд. Без инсайтов графики остаются
               просто красивыми картинками.
             </p>
@@ -392,183 +422,212 @@
           </div>
         </article>
 
-        <article>
-          <h2>Преимущества и недостатки в работе Data Analyst-а</h2>
-          <p>
-            Видео по теме:
-            <a
-              href="https://www.youtube.com/watch?si=8TWZUo5SDkn99kr1&v=bXAzuqcF6XE&feature=youtu.be"
-              target="_blank"
-              rel="noopener noreferrer"
-              >тык сюда</a
-            >
-          </p>
+        <article class="pros-cons">
+          <h2 class="subtitle">
+            Преимущества и недостатки в работе Data Analyst-а
+          </h2>
 
-          <div class="block">
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+          <div class="video-links">
+            <p>Видео по теме:</p>
+            <div class="video-links__container">
+              <a
+                href="https://www.youtube.com/watch?v=bXAzuqcF6XE"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="video-link"
               >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
+                <svg
+                  class="youtube-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
                   fill="none"
-                />
-              </svg>
-              Работа с понятными задачами — видишь результат сразу.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Не нужно быть крутым программистом, чтобы начать.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Востребованная профессия — аналитиков ищут везде: от банков до
-              магазинов.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Можно работать удалённо или в офисе, как хочешь.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Легче войти в IT, чем в другие роли с данными.
-            </p>
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.098C19.614 3.5 12 3.5 12 3.5s-7.614 0-9.408.588a2.97 2.97 0 0 0-2.09 2.098C0 8.057 0 12 0 12s0 3.943.502 5.814a2.97 2.97 0 0 0 2.09 2.098C4.386 20.5 12 20.5 12 20.5s7.614 0 9.408-.588a2.97 2.97 0 0 0 2.09-2.098C24 15.943 24 12 24 12s0-3.943-.502-5.814zM9.75 15.75V8.25l6.5 3.75-6.5 3.75z"
+                    fill="#FF0000"
+                  />
+                </svg>
+                Посмотреть на YouTube
+              </a>
+            </div>
           </div>
 
-          <div class="block">
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Иногда данные — это бардак, и их приходится долго чистить.
-            </p>
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Много рутины: таблицы, отчёты, снова таблицы.
-            </p>
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Зарплата растёт медленнее, чем у инженеров или учёных данных.
-            </p>
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
+          <div class="pros-cons__wrapper">
+            <!-- Преимущества -->
+            <div class="pros-cons__section pros">
+              <h3 class="pros-cons__title">Преимущества</h3>
+              <ul class="pros-cons__list">
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Работа с понятными задачами — видишь результат сразу.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Не нужно быть крутым программистом, чтобы начать.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Востребованная профессия — аналитиков ищут везде: от банков до
+                  магазинов.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Можно работать удалённо или в офисе, как хочешь.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Легче войти в IT, чем в другие роли с данными.
+                </li>
+              </ul>
+            </div>
 
-              Нужно быть готовым к вопросам "а почему так?" по сто раз в день.
-            </p>
+            <!-- Недостатки -->
+            <div class="pros-cons__section cons">
+              <h3 class="pros-cons__title">Недостатки</h3>
+              <ul class="pros-cons__list">
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Иногда данные — это бардак, и их приходится долго чистить.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Много рутины: таблицы, отчёты, снова таблицы.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Зарплата растёт медленнее, чем у инженеров или учёных данных.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Нужно быть готовым к вопросам "а почему так?" по сто раз в
+                  день.
+                </li>
+              </ul>
+            </div>
           </div>
         </article>
 
         <article>
-          <h2>Насколько востребованы Data Analyst-ы</h2>
+          <h2 class="subtitle">Насколько востребованы Data Analyst-ы</h2>
 
           <div class="block">
             <p>
@@ -588,43 +647,60 @@
               заработная плата, и если в других сферах это правило не всегда
               работает, то в айтишке — это закон. Международные корпорации
               обычно предлагают более высокие ставки, в то время как стартапы
-              заманивают бонусами и акциями.
+              привлекают сотрудников бонусами и акциями, обещающими
+              потенциальную выгоду в будущем.
             </p>
-            <p>Типы организаций:</p>
-            <ul>
-              <li>
-                Продуктовые: выше фиксированная ЗП, меньше переменных бонусов.
-              </li>
-              <li>
-                Аутсорсинговые: средний доход, но часто дополнительные плюсы,
-                вроде обучения.
-              </li>
-              <li>
-                Стартапы: нестабильность, но потенциал высокой доходности.
-              </li>
-            </ul>
+            <p>
+              Уровень дохода также зависит от типа организации. Например,
+              продуктовые компании, как правило, предлагают более высокую
+              фиксированную зарплату, но при этом переменные бонусы у них обычно
+              меньше. Аутсорсинговые компании обеспечивают средний доход, однако
+              часто добавляют дополнительные плюсы, такие как обучение или
+              другие бенефиты. Стартапы, в свою очередь, могут быть менее
+              стабильными в плане дохода, но при этом дают потенциал высокой
+              доходности, особенно если проект "выстрелит".
+            </p>
           </div>
         </article>
 
         <article>
-          <h2>Итоги</h2>
-          <p>
-            Видео по теме:
-            <a
-              href="https://www.youtube.com/watch?v=vHTgBA1ksos&ab_channel=LearnwithLukas"
-              target="_blank"
-              rel="noopener noreferrer"
-              >тык сюда</a
-            >
-          </p>
+          <h2 class="subtitle">Итоги</h2>
+          <div class="video-links">
+            <p>Видео по теме:</p>
+            <div class="video-links__container">
+              <a
+                href="https://www.youtube.com/watch?v=vHTgBA1ksos&ab_channel=LearnwithLukas"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="video-link"
+              >
+                <svg
+                  class="youtube-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.098C19.614 3.5 12 3.5 12 3.5s-7.614 0-9.408.588a2.97 2.97 0 0 0-2.09 2.098C0 8.057 0 12 0 12s0 3.943.502 5.814a2.97 2.97 0 0 0 2.09 2.098C4.386 20.5 12 20.5 12 20.5s7.614 0 9.408-.588a2.97 2.97 0 0 0 2.09-2.098C24 15.943 24 12 24 12s0-3.943-.502-5.814zM9.75 15.75V8.25l6.5 3.75-6.5 3.75z"
+                    fill="#FF0000"
+                  />
+                </svg>
+                Посмотреть на YouTube
+              </a>
+            </div>
+          </div>
 
           <div class="block summary">
             <p>
               Профессия Data Analyst — это входной билет в мир аналитики и IT
               без глубокого погружения в программирование. Работа сочетает
-              рутину с поиском <strong>инсайтов</strong>, а карьера растёт
-              быстрее, если освоить <strong>SQL</strong>,
-              <strong>Python</strong> и <strong>BI-инструменты</strong>.
+              рутину с поиском <strong data-tippy-content="">инсайтов</strong>,
+              а карьера растёт быстрее, если освоить
+              <strong data-tippy-content="">SQL</strong>,
+              <strong data-tippy-content="">Python</strong> и
+              <strong data-tippy-content="">BI-инструменты</strong>.
               Востребованность стабильная, но зарплаты ниже, чем у
               разработчиков. Главное — уметь видеть за цифрами реальные
               бизнес-проблемы и решения.
@@ -634,8 +710,12 @@
       </section>
     </main>
     <footer>
-      © 2025. Все права защищены. Сделано для тех, кто делает будущее.
+      <p>© 2025. Все права защищены. Сделано для тех, кто делает будущее.</p>
     </footer>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

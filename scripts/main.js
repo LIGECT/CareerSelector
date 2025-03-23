@@ -44,3 +44,18 @@ burger.addEventListener("click", () => {
   navbar.classList.toggle("active");
   console.log("Navbar classList:", navbar.classList);
 });
+
+document.querySelectorAll("strong").forEach((element) => {
+  const content =
+    element.getAttribute("data-tippy-content") || "Это важный термин!";
+
+  tippy(element, {
+    content: content,
+    theme: "custom",
+    placement: "top",
+    animation: "shift-away",
+    duration: [300, 200],
+    arrow: true,
+    interactive: true,
+  });
+});

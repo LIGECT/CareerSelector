@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/themes/light.css"
+    />
     <title>Войти в IT</title>
   </head>
   <body>
     <header>
       <nav>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="navbar">
           <li><a href="./index.html">Главная</a></li>
           <li><a href="./data-scientist.html">Data Scientist</a></li>
@@ -21,28 +31,32 @@
       </nav>
     </header>
     <main>
-      <h1>Fullstack JavaScript Developer</h1>
-      <section>
+      <div id="particles-js"></div>
+      <h1 class="title">Fullstack JavaScript Developer</h1>
+      <section class="content-blocks">
         <article>
-          <h2>Кто это</h2>
+          <h2 class="subtitle">Кто это</h2>
 
           <div class="block">
             <p>
               Fullstack JavaScript разработчик — это человек, который умеет
               делать сайты и приложения от начала до конца. Он как универсальный
               солдат: и "лицо" сайта нарисует, и "мозги" за кулисами настроит.
-              Всё на одном языке — <strong>JavaScript</strong>.
+              Всё на одном языке —
+              <strong data-tippy-content="">JavaScript</strong>.
             </p>
             <p>
               Раньше интерфейс сайтов состоял из текстов, ссылок и иллюстраций,
-              а верстали его с помощью языков <strong>HTML</strong> и
-              <strong>CSS</strong>. Всё изменилось с созданием JavaScript. Этот
-              язык программирования сделал сайты интерактивными — то есть
-              удобными для пользователя. Появились кнопки, формы, поля ввода и
-              многое другое.
+              а верстали его с помощью языков
+              <strong data-tippy-content="">HTML</strong> и
+              <strong data-tippy-content="">CSS</strong>. Всё изменилось с
+              созданием JavaScript. Этот язык программирования сделал сайты
+              интерактивными — то есть удобными для пользователя. Появились
+              кнопки, формы, поля ввода и многое другое.
             </p>
             <p>
-              JavaScript (или по-другому <strong>JS</strong>) — это
+              JavaScript (или по-другому
+              <strong data-tippy-content="">JS</strong>) — это
               многофункциональный язык программирования. JavaScript используют
               не только для создания сайтов, но и для написания очень разных
               программ.
@@ -51,15 +65,16 @@
         </article>
 
         <article>
-          <h2>Где используют JavaScript</h2>
+          <h2 class="subtitle">Где используют JavaScript</h2>
 
           <div class="block">
             <p>
-              <strong>Фронтенд</strong> веб-приложений. С помощью
-              <strong>JavaScript</strong> разработчики создают веб-приложения —
-              это программы, которые мы запускаем в браузере. К ним относятся
-              почтовые клиенты, редакторы текста, социальные сети, видеохостинги
-              и многое другое.
+              <strong data-tippy-content="">Фронтенд</strong> веб-приложений. С
+              помощью
+              <strong data-tippy-content="">JavaScript</strong> разработчики
+              создают веб-приложения — это программы, которые мы запускаем в
+              браузере. К ним относятся почтовые клиенты, редакторы текста,
+              социальные сети, видеохостинги и многое другое.
             </p>
             <p>
               На JavaScript создают «внешний интерфейс» веб-приложений —
@@ -71,46 +86,52 @@
 
           <div class="block">
             <p>
-              <strong>Бэкенд</strong> веб-приложений. Кроме интерфейса, который
-              видят пользователи, у веб-приложений есть и внутренняя часть —
-              бэкенд. Это серверная часть приложения, в которой обычно хранятся
-              <strong>базы данных</strong>.
+              <strong data-tippy-content="">Бэкенд</strong> веб-приложений.
+              Кроме интерфейса, который видят пользователи, у веб-приложений
+              есть и внутренняя часть — бэкенд. Это серверная часть приложения,
+              в которой обычно хранятся
+              <strong data-tippy-content="">базы данных</strong>.
             </p>
             <p>
-              У JavaScript есть <strong>Node.js</strong> — это не отдельный язык
-              программирования, а среда исполнения JavaScript-кода на стороне
-              сервера. С её помощью можно выполнять операции или обращаться к
-              базам данных. JavaScript в связке с Node.js используют известные
-              компании PayPal и Walmart для взаимодействия со своими серверами.
+              У JavaScript есть <strong data-tippy-content="">Node.js</strong> —
+              это не отдельный язык программирования, а среда исполнения
+              JavaScript-кода на стороне сервера. С её помощью можно выполнять
+              операции или обращаться к базам данных. JavaScript в связке с
+              Node.js используют известные компании PayPal и Walmart для
+              взаимодействия со своими серверами.
             </p>
           </div>
         </article>
 
         <article>
-          <h2>Что делает Fullstack JavaScript разработчик</h2>
+          <h2 class="subtitle">Что делает Fullstack JavaScript разработчик</h2>
 
           <div class="block">
             <p>
               Fullstack JavaScript разработчик — это мастер на все руки в мире
-              веба. Он работает и с <strong>фронтендом</strong> (то, что ты
+              веба. Он работает и с
+              <strong data-tippy-content="">фронтендом</strong> (то, что ты
               видишь на сайте — кнопки, картинки, меню), и с
-              <strong>бэкендом</strong> (то, что скрыто — сервер, данные,
-              логика). Представь, что ты строишь дом: фронтенд — это окна и
-              стены, а бэкенд — проводка и фундамент. Fullstack делает и то, и
-              другое.
+              <strong data-tippy-content="">бэкендом</strong> (то, что скрыто —
+              сервер, данные, логика). Представь, что ты строишь дом: фронтенд —
+              это окна и стены, а бэкенд — проводка и фундамент. Fullstack
+              делает и то, и другое.
             </p>
             <p>
               Эти ребята создают сайты (например, интернет-магазины), приложения
               (как чаты или соцсети) и даже игры в браузере. Они используют
-              <strong>JavaScript</strong> везде: <strong>React</strong> или
-              <strong>Vue</strong> для красивого интерфейса,
-              <strong>Node.js</strong> для серверной части, а ещё
-              <strong>базы данных</strong>, чтобы хранить информацию. Благодаря
-              им ты можешь заказать пиццу онлайн или пролистать ленту в
-              соцсетях. В работе помогают инструменты вроде
-              <strong>VS Code</strong> (где пишут код),
-              <strong>Git</strong> (для хранения версий) и всякие
-              <strong>библиотеки</strong>, чтобы не изобретать велосипед.
+              <strong data-tippy-content="">JavaScript</strong> везде:
+              <strong data-tippy-content="">React</strong> или
+              <strong data-tippy-content="">Vue</strong> для красивого
+              интерфейса, <strong data-tippy-content="">Node.js</strong> для
+              серверной части, а ещё
+              <strong data-tippy-content="">базы данных</strong>, чтобы хранить
+              информацию. Благодаря им ты можешь заказать пиццу онлайн или
+              пролистать ленту в соцсетях. В работе помогают инструменты вроде
+              <strong data-tippy-content="">VS Code</strong> (где пишут код),
+              <strong data-tippy-content="">Git</strong> (для хранения версий) и
+              всякие <strong data-tippy-content="">библиотеки</strong>, чтобы не
+              изобретать велосипед.
             </p>
           </div>
 
@@ -133,20 +154,25 @@
             <p>
               Его задача — не просто написать код, а создать удобный, быстрый и
               безопасный продукт. Он думает о производительности, защите данных,
-              <strong>масштабируемости</strong> проекта. Например, если ты
-              заказываешь еду через приложение, он отвечает за то, чтобы
-              интерфейс был удобным, заказ отправился без сбоев, а сервер не
-              рухнул от нагрузки в час пик.
+              <strong data-tippy-content="">масштабируемости</strong> проекта.
+              Например, если ты заказываешь еду через приложение, он отвечает за
+              то, чтобы интерфейс был удобным, заказ отправился без сбоев, а
+              сервер не рухнул от нагрузки в час пик.
             </p>
             <p>
               Fullstack-разработчик владеет не только JavaScript, но и такими
-              технологиями, как <strong>TypeScript</strong> (для надёжности
-              кода), <strong>Webpack</strong> (для оптимизации),
-              <strong>Docker</strong> (для удобного развертывания), а также
-              различными базами данных (<strong>SQL</strong> и
-              <strong>NoSQL</strong>). Он знает, как работают
-              <strong>API</strong>, умеет деплоить проекты в облако и
-              разбираться с <strong>DevOps</strong>-задачами.
+              технологиями, как
+              <strong data-tippy-content="">TypeScript</strong> (для надёжности
+              кода), <strong data-tippy-content="">Webpack</strong> (для
+              оптимизации), <strong data-tippy-content="">Docker</strong> (для
+              удобного развертывания), а также различными базами данных (<strong
+                data-tippy-content=""
+                >SQL</strong
+              >
+              и <strong data-tippy-content="">NoSQL</strong>). Он знает, как
+              работают <strong data-tippy-content="">API</strong>, умеет
+              деплоить проекты в облако и разбираться с
+              <strong data-tippy-content="">DevOps</strong>-задачами.
             </p>
             <p>
               Это не просто человек, который "умеет всё понемногу", а тот, кто
@@ -157,14 +183,18 @@
         </article>
 
         <article>
-          <h2>Сколько получает Fullstack JavaScript разработчик</h2>
+          <h2 class="subtitle">
+            Сколько получает Fullstack JavaScript разработчик
+          </h2>
 
           <div class="block">
             <p>
               Как всегда: больше опыта — больше денег. В крупных городах или на
               зарубежных проектах платят щедрее, чем в маленьких. Если знаешь
-              популярные штуки вроде <strong>React</strong> или умеешь работать
-              с <strong>облаками</strong>, ставка может подскочить на 10-15%.
+              популярные штуки вроде
+              <strong data-tippy-content="">React</strong> или умеешь работать с
+              <strong data-tippy-content="">облаками</strong>, ставка может
+              подскочить на 10-15%.
             </p>
             <p>
               Сравнение заработной платы в зависимости от уровня специалиста:
@@ -209,31 +239,36 @@
         </article>
 
         <article>
-          <h2>Востребованность</h2>
+          <h2 class="subtitle">Востребованность</h2>
 
           <div class="block">
             <p>
-              Ещё интереснее исследование <strong>GitHub</strong> — это облачная
+              Ещё интереснее исследование
+              <strong data-tippy-content="">GitHub</strong> — это облачная
               площадка для хостинга IT-проектов, которую используют почти все
               разработчики. Сервис собирает репрезентативную статистику по
               языкам программирования от профессионалов.
             </p>
             <p>
-              По данным GitHub, <strong>JavaScript</strong> совместно с
-              <strong>TypeScript</strong> контролирует уже треть рынка
-              разработки. В рейтинге языков для коммерческого использования он
-              получил почётное первое место. На нём пишут 19% респондентов.
+              По данным GitHub,
+              <strong data-tippy-content="">JavaScript</strong> совместно с
+              <strong data-tippy-content="">TypeScript</strong> контролирует уже
+              треть рынка разработки. В рейтинге языков для коммерческого
+              использования он получил почётное первое место. На нём пишут 19%
+              респондентов.
             </p>
             <p>
               Интересно, что доля применения JavaScript за последние два года
-              растёт не только на <strong>фронтенде</strong>, но и на
-              <strong>бэкенде</strong>. Сейчас JavaScript занимает седьмое место
-              по популярности для бэкенда и первое для фронтенда. Причём на
-              фронтенде он занимает 64,6% рынка.
+              растёт не только на
+              <strong data-tippy-content="">фронтенде</strong>, но и на
+              <strong data-tippy-content="">бэкенде</strong>. Сейчас JavaScript
+              занимает седьмое место по популярности для бэкенда и первое для
+              фронтенда. Причём на фронтенде он занимает 64,6% рынка.
             </p>
             <p>
-              В сегменте <strong>фулстек-разработки</strong> (то есть и
-              фронтенда, и бэкенда) JavaScript занимает второе место и долю
+              В сегменте
+              <strong data-tippy-content="">фулстек-разработки</strong> (то есть
+              и фронтенда, и бэкенда) JavaScript занимает второе место и долю
               рынка в 20,6%.
             </p>
           </div>
@@ -252,55 +287,63 @@
         </article>
 
         <article>
-          <h2>Перспективы JavaScript</h2>
+          <h2 class="subtitle">Перспективы JavaScript</h2>
 
           <div class="block">
             <p>
               Google сейчас активно развивает сегмент
-              <strong>прогрессивных веб-приложений</strong> — это смесь
-              стандартного сайта и мобильного приложения. Таким решениям —
-              <strong>progressive web apps</strong> — предрекают широкие
-              перспективы. Они выгодны для бизнеса, поэтому имеют шанс на часть
-              рынка, которая пока что принадлежит приложениям, разработанным
-              только под одну платформу.
+              <strong data-tippy-content=""
+                >прогрессивных веб-приложений</strong
+              >
+              — это смесь стандартного сайта и мобильного приложения. Таким
+              решениям —
+              <strong data-tippy-content="">progressive web apps</strong> —
+              предрекают широкие перспективы. Они выгодны для бизнеса, поэтому
+              имеют шанс на часть рынка, которая пока что принадлежит
+              приложениям, разработанным только под одну платформу.
             </p>
             <p>
               Всё это в совокупности делает
-              <strong>JavaScript</strong> перспективным языком программирования,
-              который будет продолжать играть важную роль в разных сферах: от
-              веб-разработки до <strong>геймдизайна</strong>.
+              <strong data-tippy-content="">JavaScript</strong> перспективным
+              языком программирования, который будет продолжать играть важную
+              роль в разных сферах: от веб-разработки до
+              <strong data-tippy-content="">геймдизайна</strong>.
             </p>
           </div>
         </article>
 
         <article>
-          <h2>Что означает скрипт в названии JavaScript</h2>
+          <h2 class="subtitle">Что означает скрипт в названии JavaScript</h2>
 
           <div class="block">
             <p>
-              В начале 90-х годов, когда был создан <strong>JavaScript</strong>,
-              компания Netscape разрабатывала браузер под названием
-              <strong>Netscape Navigator</strong>. По задумке, в браузере должна
-              была быть возможность для создания интерактивных и динамических
-              веб-страниц.
+              В начале 90-х годов, когда был создан
+              <strong data-tippy-content="">JavaScript</strong>, компания
+              Netscape разрабатывала браузер под названием
+              <strong data-tippy-content="">Netscape Navigator</strong>. По
+              задумке, в браузере должна была быть возможность для создания
+              интерактивных и динамических веб-страниц.
             </p>
             <p>
               Компания наняла программиста Брендана Айка, чтобы разработать
               новый язык программирования. Он должен был называться
-              <strong>LiveScript</strong>. Но из-за популярности языка
-              <strong>Java</strong> (разработанного компанией Sun Microsystems),
-              компания Netscape решила изменить его имя на JavaScript, чтобы
-              привлечь внимание и ассоциировать его с Java.
+              <strong data-tippy-content="">LiveScript</strong>. Но из-за
+              популярности языка
+              <strong data-tippy-content="">Java</strong> (разработанного
+              компанией Sun Microsystems), компания Netscape решила изменить его
+              имя на JavaScript, чтобы привлечь внимание и ассоциировать его с
+              Java.
             </p>
           </div>
 
           <div class="block">
             <p>
               JavaScript — это язык программирования, который используется для
-              написания <strong>скриптов</strong>. Скрипты — это небольшие
-              программы, которые выполняются внутри веб-браузера и добавляют
-              интерактивность на веб-страницах. Например, с помощью JavaScript
-              можно создавать <strong>валидацию форм</strong>, анимации,
+              написания <strong data-tippy-content="">скриптов</strong>. Скрипты
+              — это небольшие программы, которые выполняются внутри веб-браузера
+              и добавляют интерактивность на веб-страницах. Например, с помощью
+              JavaScript можно создавать
+              <strong data-tippy-content="">валидацию форм</strong>, анимации,
               обработку событий (например, кликов мыши), и многое другое, что
               делает веб-страницы более динамичными и удобными для
               пользователей.
@@ -314,22 +357,24 @@
         </article>
 
         <article>
-          <h2>В чём особенности JavaScript</h2>
+          <h2 class="subtitle">В чём особенности JavaScript</h2>
 
           <div class="block">
             <h3>Интеграция с HTML и CSS</h3>
             <p>
-              <strong>HTML</strong> — язык разметки, а <strong>CSS</strong> —
-              таблицы стилей. На них нельзя писать полноценный код: можно только
-              размещать элементы на странице сайта.
+              <strong data-tippy-content="">HTML</strong> — язык разметки, а
+              <strong data-tippy-content="">CSS</strong> — таблицы стилей. На
+              них нельзя писать полноценный код: можно только размещать элементы
+              на странице сайта.
             </p>
             <p>
-              А вот на <strong>JavaScript</strong> уже можно писать код, и этот
-              язык интегрирован с языками разметки. То есть если нужно добавить
-              в разметку <strong>скрипт</strong>, туда вписывают код на
-              JavaScript. Но чаще на страницу просто вставляют ссылку на файл:
-              это позволяет использовать один скрипт на многих страницах и не
-              редактировать каждую из них.
+              А вот на <strong data-tippy-content="">JavaScript</strong> уже
+              можно писать код, и этот язык интегрирован с языками разметки. То
+              есть если нужно добавить в разметку
+              <strong data-tippy-content="">скрипт</strong>, туда вписывают код
+              на JavaScript. Но чаще на страницу просто вставляют ссылку на
+              файл: это позволяет использовать один скрипт на многих страницах и
+              не редактировать каждую из них.
             </p>
           </div>
 
@@ -337,17 +382,19 @@
             <h3>Мультипарадигменность</h3>
             <p>В программировании есть три основные парадигмы:</p>
             <p>
-              <strong>Объектная</strong> — в ней оперируют функциями и набором
-              данных, а код строят как систему отношений между ними.
+              <strong data-tippy-content="">Объектная</strong> — в ней оперируют
+              функциями и набором данных, а код строят как систему отношений
+              между ними.
             </p>
             <p>
-              <strong>Функциональная</strong> — используют математические
-              функции. Из-за отсутствия переменных, меняющих значения, результат
-              запросов в этой парадигме всегда одинаковый.
+              <strong data-tippy-content="">Функциональная</strong> — используют
+              математические функции. Из-за отсутствия переменных, меняющих
+              значения, результат запросов в этой парадигме всегда одинаковый.
             </p>
             <p>
-              <strong>Императивная</strong> — используют переменные, которым
-              прописывают значения, и инструкции, выполняющиеся последовательно.
+              <strong data-tippy-content="">Императивная</strong> — используют
+              переменные, которым прописывают значения, и инструкции,
+              выполняющиеся последовательно.
             </p>
             <p>
               Особенность JavaScript в том, что язык позволяет использовать
@@ -357,326 +404,341 @@
           </div>
         </article>
 
-        <article>
-          <h2>
+        <article class="pros-cons">
+          <h2 class="subtitle">
             Преимущества и недостатки в работе Fullstack JavaScript разработчика
           </h2>
 
-          <div class="block">
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Делаешь проект целиком — от идеи до запуска.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
+          <div class="pros-cons__wrapper">
+            <!-- Преимущества -->
+            <div class="pros-cons__section pros">
+              <h3 class="pros-cons__title">Преимущества</h3>
+              <ul class="pros-cons__list">
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Делаешь проект целиком — от идеи до запуска.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Востребованность: веб нужен всем — от стартапов до корпораций.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Один язык для всего — не нужно учить кучу разного.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Можно работать удалённо или в офисе, как удобнее.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Быстро видишь результат — сайт оживает на глазах.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Не зависит от платформы. Если вы захотите запустить программу
+                  на JavaScript, не придётся ставить дополнительных приложений:
+                  это сделает любой браузер. Другие языки потребуют установки
+                  компилятора, который исполнит код, или среды разработки (IDE).
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Нетребовательный. Так как JavaScript исполняет код в браузере,
+                  программа на нём не нагружает сервер, а время ответа
+                  становится минимальным. Например, когда вы придумываете новый
+                  пароль — оповещение о том, что он недостаточно сложный,
+                  появляется моментально. Это заслуга JavaScript.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-check"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Прост в изучении. JavaScript входит в топ самых лёгких языков
+                  программирования. При этом у него огромное комьюнити и большое
+                  количество инструментов, облегчающих жизнь разработчика.
+                </li>
+              </ul>
+            </div>
 
-              Востребованность: веб нужен всем — от стартапов до корпораций.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Один язык для всего — не нужно учить кучу разного.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Можно работать удалённо или в офисе, как удобнее.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Быстро видишь результат — сайт оживает на глазах.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Не зависит от платформы. Если вы захотите запустить программу на
-              <strong>JavaScript</strong>, не придётся ставить дополнительных
-              приложений: это сделает любой браузер. Другие языки потребуют
-              установки <strong>компилятора</strong>, который исполнит код, или
-              <strong>среды разработки (IDE)</strong>.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Нетребовательный. Так как JavaScript исполняет код в браузере,
-              программа на нём не нагружает сервер, а время ответа становится
-              минимальным. Например, когда вы придумываете новый пароль —
-              оповещение о том, что он недостаточно сложный, появляется
-              моментально. Это заслуга JavaScript.
-            </p>
-            <p>
-              <svg
-                class="icon-check"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 13l4 4L19 7"
-                  stroke="green"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Прост в изучении. JavaScript входит в топ самых лёгких языков
-              программирования. При этом у него огромное
-              <strong>комьюнити</strong> и большое количество инструментов,
-              облегчающих жизнь разработчика.
-            </p>
-          </div>
-
-          <div class="block">
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-              Много задач сразу — голова может закипеть.
-            </p>
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Нужно знать и <strong>фронтенд</strong>, и
-              <strong>бэкенд</strong> — учиться дольше.
-            </p>
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Технологии меняются быстро — не успеешь оглянуться, а
-              <strong>React</strong> уже обновился.
-            </p>
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Иногда приходится чинить чужой код, а это как разгребать свалку.
-            </p>
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Проблема типов данных. Переменные в JavaScript могут менять свой
-              тип данных в процессе выполнения программы. Представьте, что у нас
-              есть переменная, в которой написано «1000». Эта запись может быть
-              как числом, так и просто содержимым строки — текстом. Сложить
-              строку и число в большинстве языков программирования нельзя. А
-              JavaScript может просто выдать результат вычислений. За счёт этого
-              в коде возникают непредвиденные ошибки, которые бывает сложно
-              найти.
-            </p>
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Слишком много дополнительных <strong>библиотек</strong> и
-              <strong>фреймворков</strong>. Чтобы пользоваться всеми
-              возможностями JavaScript, нужны дополнительные инструменты. Их
-              выбор — сама по себе сложная задача. Нужно, чтобы они не
-              конфликтовали друг с другом, правильно взаимодействовали, и их
-              поддержка не прекратилась в один неприятный момент. Главный минус
-              для начинающего программиста на JavaScript — чтобы начать карьеру
-              в коммерческой разработке, потребуется изучить несколько
-              инструментов. А затем для перехода в новый проект — ещё несколько.
-            </p>
-            <p>
-              <svg
-                class="icon-cross"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6l12 12M18 6L6 18"
-                  stroke="red"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
-
-              Проблемы с производительностью.
-              <strong>Интерпретируемость</strong> JavaScript принято считать
-              достоинством, но иногда она становится и недостатком. При
-              обработке больших массивов данных операции могут выполняться менее
-              эффективно, чем на других языках.
-            </p>
+            <!-- Недостатки -->
+            <div class="pros-cons__section cons">
+              <h3 class="pros-cons__title">Недостатки</h3>
+              <ul class="pros-cons__list">
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Много задач сразу — голова может закипеть.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Нужно знать и фронтенд, и бэкенд — учиться дольше.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Технологии меняются быстро — не успеешь оглянуться, а React
+                  уже обновился.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Иногда приходится чинить чужой код, а это как разгребать
+                  свалку.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Проблема типов данных. Переменные в JavaScript могут менять
+                  свой тип данных в процессе выполнения программы. Представьте,
+                  что у нас есть переменная, в которой написано «1000». Эта
+                  запись может быть как числом, так и просто содержимым строки —
+                  текстом. Сложить строку и число в большинстве языков
+                  программирования нельзя. А JavaScript может просто выдать
+                  результат вычислений. За счёт этого в коде возникают
+                  непредвиденные ошибки, которые бывает сложно найти.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Слишком много дополнительных библиотек и фреймворков. Чтобы
+                  пользоваться всеми возможностями JavaScript, нужны
+                  дополнительные инструменты. Их выбор — сама по себе сложная
+                  задача. Нужно, чтобы они не конфликтовали друг с другом,
+                  правильно взаимодействовали, и их поддержка не прекратилась в
+                  один неприятный момент. Главный минус для начинающего
+                  программиста на JavaScript — чтобы начать карьеру в
+                  коммерческой разработке, потребуется изучить несколько
+                  инструментов. А затем для перехода в новый проект — ещё
+                  несколько.
+                </li>
+                <li class="pros-cons__item">
+                  <svg
+                    class="icon-cross"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="var(--color-accent)"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
+                  Проблемы с производительностью. Интерпретируемость JavaScript
+                  принято считать достоинством, но иногда она становится и
+                  недостатком. При обработке больших массивов данных операции
+                  могут выполняться менее эффективно, чем на других языках.
+                </li>
+              </ul>
+            </div>
           </div>
         </article>
 
         <article>
-          <h2>Итоги</h2>
-          <p>
-            Видео по теме:
-            <a
-              href="https://www.youtube.com/watch?v=FLxwsuNe2BI&ab_channel=%D0%AD%D0%BD%D1%86%D0%B8%D0%BA%D0%BB%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F%D0%90%D0%B9%D1%82%D0%B8%D1%88%D0%BD%D0%B8%D0%BA%D0%B0"
-              target="_blank"
-              rel="noopener noreferrer"
-              >тык сюда</a
-            >
-          </p>
+          <h2 class="subtitle">Итоги</h2>
+          <div class="video-links">
+            <p>Видео по теме:</p>
+            <div class="video-links__container">
+              <a
+                href="https://www.youtube.com/watch?v=FLxwsuNe2BI&ab_channel=%D0%AD%D0%BD%D1%86%D0%B8%D0%BA%D0%BB%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F%D0%90%D0%B9%D1%82%D0%B8%D1%88%D0%BD%D0%B8%D0%BA%D0%B0"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="video-link"
+              >
+                <svg
+                  class="youtube-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.098C19.614 3.5 12 3.5 12 3.5s-7.614 0-9.408.588a2.97 2.97 0 0 0-2.09 2.098C0 8.057 0 12 0 12s0 3.943.502 5.814a2.97 2.97 0 0 0 2.09 2.098C4.386 20.5 12 20.5 12 20.5s7.614 0 9.408-.588a2.97 2.97 0 0 0 2.09-2.098C24 15.943 24 12 24 12s0-3.943-.502-5.814zM9.75 15.75V8.25l6.5 3.75-6.5 3.75z"
+                    fill="#FF0000"
+                  />
+                </svg>
+                Посмотреть на YouTube
+              </a>
+            </div>
+          </div>
 
           <div class="block summary">
             <p>
@@ -689,26 +751,35 @@
             <p>
               В отличие от узкоспециализированных разработчиков, fullstack
               должен не только писать код, но и разбираться в
-              <strong>архитектуре приложений</strong>, оптимизировать
-              производительность, следить за безопасностью и учитывать
-              потребности пользователей.
+              <strong data-tippy-content="">архитектуре приложений</strong>,
+              оптимизировать производительность, следить за безопасностью и
+              учитывать потребности пользователей.
             </p>
             <p>
               Спрос на таких специалистов стабильно высокий, но и требования к
-              ним выше: знание одного <strong>JavaScript</strong> уже не
-              достаточно. Важно владеть инструментами автоматизации
-              (<strong>Webpack</strong>, <strong>Vite</strong>), контейнеризации
-              (<strong>Docker</strong>, <strong>Kubernetes</strong>), облачными
-              сервисами (<strong>AWS</strong>, <strong>Firebase</strong>),
-              методологиями <strong>DevOps</strong> и <strong>CI/CD</strong>.
+              ним выше: знание одного
+              <strong data-tippy-content="">JavaScript</strong> уже не
+              достаточно. Важно владеть инструментами автоматизации (<strong
+                data-tippy-content=""
+                >Webpack</strong
+              >, <strong data-tippy-content="">Vite</strong>), контейнеризации
+              (<strong data-tippy-content="">Docker</strong>,
+              <strong data-tippy-content="">Kubernetes</strong>), облачными
+              сервисами (<strong data-tippy-content="">AWS</strong>,
+              <strong data-tippy-content="">Firebase</strong>), методологиями
+              <strong data-tippy-content="">DevOps</strong> и
+              <strong data-tippy-content="">CI/CD</strong>.
             </p>
             <p>
               Перспективы профессии связаны не только с развитием веба, но и с
               расширением JavaScript за его пределы. Сегодня он применяется в
-              мобильной разработке (<strong>React Native</strong>), создании
-              десктопных приложений (<strong>Electron</strong>), работе с
-              <strong>IoT</strong> и
-              <strong>микросервисной архитектурой</strong>.
+              мобильной разработке (<strong data-tippy-content=""
+                >React Native</strong
+              >), создании десктопных приложений (<strong data-tippy-content=""
+                >Electron</strong
+              >), работе с <strong data-tippy-content="">IoT</strong> и
+              <strong data-tippy-content="">микросервисной архитектурой</strong
+              >.
             </p>
             <p>
               Fullstack — это не просто набор технологий, а подход к разработке,
@@ -720,8 +791,12 @@
       </section>
     </main>
     <footer>
-      © 2025. Все права защищены. Сделано для тех, кто делает будущее.
+      <p>© 2025. Все права защищены. Сделано для тех, кто делает будущее.</p>
     </footer>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

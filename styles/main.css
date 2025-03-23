@@ -242,6 +242,7 @@ main::before {
 
 footer {
   background-color: var(--color-deep-black);
+  color: var(--color-light-gray);
   padding: 20px 0;
   text-align: center;
   margin-top: auto;
@@ -449,6 +450,104 @@ footer p {
   z-index: 0;
 }
 
+/* Стили для блока преимуществ и недостатков */
+.pros-cons {
+  margin: 40px 0;
+  padding: 20px;
+  background: rgba(
+    46,
+    52,
+    54,
+    0.3
+  ); /* Полупрозрачный фон, как у других блоков */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок блока */
+.pros-cons .subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--color-white);
+}
+
+/* Обёртка для двух колонок */
+.pros-cons__wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Секции (преимущества и недостатки) */
+.pros-cons__section {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05); /* Лёгкий светлый фон для контраста */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover-эффект для секций */
+.pros-cons__section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 94, 0, 0.1);
+}
+
+/* Заголовки секций */
+.pros-cons__title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--color-accent);
+  text-align: center;
+}
+
+/* Список */
+.pros-cons__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Элементы списка */
+.pros-cons__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 1.5;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover-эффект для элементов списка */
+.pros-cons__item:hover {
+  background: rgba(255, 94, 0, 0.1); /* Лёгкий акцентный фон */
+  transform: translateX(5px);
+}
+
+/* Иконки */
+.icon-check,
+.icon-cross {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.pros-cons__item:hover .icon-check,
+.pros-cons__item:hover .icon-cross {
+  transform: scale(1.2); /* Лёгкое увеличение иконки при наведении */
+}
+
+strong {
+  white-space: nowrap;
+}
+
 @media (max-width: 1024px) {
   .navbar {
     align-items: center;
@@ -528,6 +627,62 @@ footer p {
     padding: 0.5rem;
     font-size: 18px;
   }
+
+  .video-link {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .youtube-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tippy-box[data-theme~="custom"] {
+    background-color: var(--color-deep-black);
+    color: var(--color-white);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid var(--color-accent);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .tippy-box[data-theme~="custom"] .tippy-arrow {
+    color: var(--color-deep-black);
+    border-color: var(--color-accent);
+  }
+
+  strong {
+    position: relative;
+    cursor: help;
+    transition: color 0.3s ease;
+  }
+
+  strong:hover {
+    color: var(--color-accent);
+  }
+
+  .pros-cons__wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pros-cons__section {
+    padding: 15px;
+  }
+
+  .pros-cons__item {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .icon-check,
+  .icon-cross {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -560,6 +715,18 @@ footer p {
   h3 {
     font-size: 16px;
     padding-left: 8px;
+  }
+
+  .pros-cons {
+    padding: 15px;
+  }
+
+  .pros-cons .subtitle {
+    font-size: 20px;
+  }
+
+  .pros-cons__title {
+    font-size: 18px;
   }
 }
 
