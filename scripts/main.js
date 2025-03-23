@@ -19,21 +19,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 200);
 });
 
-window.onload = function () {
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 50, density: { enable: true, value_area: 800 } },
-      color: { value: "#ff5e00" },
-      shape: { type: "circle" },
-      opacity: { value: 0.5, random: true },
-      size: { value: 3, random: true },
-      line_linked: { enable: false },
-      move: { enable: true, speed: 1, direction: "none", random: true },
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: { onhover: { enable: false } },
-    },
-    retina_detect: true,
-  });
-};
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 50, density: { enable: true, value_area: 800 } },
+    color: { value: "#ff5e00" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5, random: true },
+    size: { value: 3, random: true },
+    line_linked: { enable: false },
+    move: { enable: true, speed: 1, direction: "none", random: true },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: { onhover: { enable: false } },
+  },
+  retina_detect: true,
+});
+
+const burger = document.querySelector(".burger-menu");
+const navbar = document.querySelector(".navbar");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  navbar.classList.toggle("active");
+  console.log("Navbar classList:", navbar.classList);
+});
