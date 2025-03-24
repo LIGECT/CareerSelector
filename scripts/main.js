@@ -59,3 +59,11 @@ document.querySelectorAll("strong").forEach((element) => {
     interactive: true,
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".profession-card button").forEach((button) => {
+    button.addEventListener("click", () => {
+      window.location.href = "./success.html";
+    });
+  });
+});

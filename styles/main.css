@@ -352,9 +352,41 @@ footer p {
 .content-blocks {
   max-width: 800px;
   width: 100%;
-  animation: slideInRight 0.5s ease;
+  margin: 40px auto;
+  padding: 0 20px;
   position: relative;
   z-index: 1;
+  opacity: 0;
+  animation: slideInRight 0.5s ease forwards 0.2s;
+}
+
+.content-blocks .subtitle {
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 0.3s;
+}
+
+.content-blocks p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-light-gray);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.highlight {
+  color: var(--color-white);
+  font-weight: 800;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.highlight:hover {
+  color: var(--color-accent); /* Оранжевый при наведении */
 }
 
 .block {
@@ -450,50 +482,39 @@ footer p {
   z-index: 0;
 }
 
-/* Стили для блока преимуществ и недостатков */
 .pros-cons {
   margin: 40px 0;
   padding: 20px;
-  background: rgba(
-    46,
-    52,
-    54,
-    0.3
-  ); /* Полупрозрачный фон, как у других блоков */
+  background: rgba(46, 52, 54, 0.3);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Заголовок блока */
 .pros-cons .subtitle {
   text-align: center;
   margin-bottom: 30px;
   color: var(--color-white);
 }
 
-/* Обёртка для двух колонок */
 .pros-cons__wrapper {
   display: flex;
   gap: 30px;
   justify-content: space-between;
 }
 
-/* Секции (преимущества и недостатки) */
 .pros-cons__section {
   flex: 1;
   padding: 20px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05); /* Лёгкий светлый фон для контраста */
+  background: rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover-эффект для секций */
 .pros-cons__section:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(255, 94, 0, 0.1);
 }
 
-/* Заголовки секций */
 .pros-cons__title {
   font-size: 20px;
   font-weight: 800;
@@ -502,14 +523,12 @@ footer p {
   text-align: center;
 }
 
-/* Список */
 .pros-cons__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Элементы списка */
 .pros-cons__item {
   display: flex;
   align-items: flex-start;
@@ -524,13 +543,11 @@ footer p {
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover-эффект для элементов списка */
 .pros-cons__item:hover {
-  background: rgba(255, 94, 0, 0.1); /* Лёгкий акцентный фон */
+  background: rgba(255, 94, 0, 0.1);
   transform: translateX(5px);
 }
 
-/* Иконки */
 .icon-check,
 .icon-cross {
   flex-shrink: 0;
@@ -541,11 +558,122 @@ footer p {
 
 .pros-cons__item:hover .icon-check,
 .pros-cons__item:hover .icon-cross {
-  transform: scale(1.2); /* Лёгкое увеличение иконки при наведении */
+  transform: scale(1.2);
 }
 
 strong {
   white-space: nowrap;
+}
+
+.comparison {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.profession-card {
+  width: 300px;
+  background: rgba(46, 52, 54, 0.8);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.profession-card:nth-child(1) {
+  animation: slideUp 0.4s ease 0.1s forwards;
+}
+.profession-card:nth-child(2) {
+  animation: slideUp 0.4s ease 0.2s forwards;
+}
+.profession-card:nth-child(3) {
+  animation: slideUp 0.4s ease 0.3s forwards;
+}
+.profession-card:nth-child(4) {
+  animation: slideUp 0.4s ease 0.4s forwards;
+}
+.profession-card:nth-child(5) {
+  animation: slideUp 0.4s ease 0.5s forwards;
+}
+
+.profession-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 94, 0, 0.1);
+  border: 1px solid var(--color-accent);
+}
+
+.profession-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.profession-card:hover img {
+  transform: scale(1.05);
+}
+
+.profession-card p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-light-gray);
+  margin: 0.5rem 0;
+}
+
+.profession-card strong {
+  color: var(--color-white);
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.profession-card strong:hover {
+  color: var(--color-accent);
+}
+
+.profession-card button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background: transparent;
+  border: 2px solid var(--color-accent);
+  color: var(--color-white);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.profession-card button:hover {
+  background: rgba(255, 94, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.summary {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.summary p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-light-gray);
+  line-height: 1.6;
+  text-align: center;
+  margin: 1rem 0;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 0.6s;
 }
 
 @media (max-width: 1024px) {
@@ -560,6 +688,20 @@ strong {
 }
 
 @media (max-width: 768px) {
+  .profession-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .comparison {
+    gap: 20px;
+  }
+
+  .profession-card button {
+    font-size: 14px;
+    padding: 0.6rem;
+  }
+
   header {
     padding: 0.5rem;
   }
@@ -686,6 +828,19 @@ strong {
 }
 
 @media (max-width: 480px) {
+  .profession-card {
+    padding: 1rem;
+  }
+
+  .profession-card p {
+    font-size: 14px;
+  }
+
+  .profession-card button {
+    font-size: 12px;
+    padding: 0.5rem;
+  }
+
   .navbar {
     gap: 0.5rem;
   }
