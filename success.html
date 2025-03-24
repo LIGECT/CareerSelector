@@ -8,8 +8,13 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <ul>
+      <nav>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="navbar">
           <li><a href="./index.html">Главная</a></li>
           <li><a href="./data-scientist.html">Data Scientist</a></li>
           <li><a href="./data-engineer.html">Data Engineer</a></li>
@@ -23,22 +28,29 @@
     <main>
       <div id="particles-js"></div>
       <h1 class="title">Успехов в твоём пути!</h1>
-      <section>
-        <div>
-          <p>
+      <section class="success-content">
+        <div class="text-block">
+          <h2 class="subtitle">
             Ты сделал выбор — впереди тебя ждёт увлекательное будущее в мире IT!
-          </p>
+          </h2>
         </div>
-        <div>
-          <!-- Здесь будет иконка, например, ракета или звезда, в зависимости от профессии -->
-          <img src="#" alt="Иконка выбранной профессии" />
+        <div class="star-block">
+          <img src="./assets/star.png" alt="Звезда" class="success-star" />
         </div>
-        <button>Вернуться на главную</button>
+        <button
+          class="return-btn"
+          onclick="window.location.href='./index.html'"
+        >
+          Вернуться на главную
+        </button>
       </section>
     </main>
     <footer>
       <p>© 2025. Все права защищены. Сделано для тех, кто делает будущее.</p>
     </footer>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
