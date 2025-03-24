@@ -50,7 +50,27 @@
     </footer>
     <script src="particles.js"></script>
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+      if (window.location.pathname.includes("success.html")) {
+        const duration = 10 * 1000; // 10 секунд
+        const end = Date.now() + duration;
+
+        (function frame() {
+          confetti({
+            particleCount: 5,
+            spread: 100,
+            startVelocity: 30,
+            origin: { x: Math.random(), y: Math.random() - 0.2 },
+          });
+
+          if (Date.now() < end) {
+            requestAnimationFrame(frame);
+          }
+        })();
+      }
+    </script>
+
     <script src="./scripts/main.js"></script>
   </body>
 </html>
