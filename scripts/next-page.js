@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextButton = document.querySelector(".next-page__button");
   if (!nextButton) return;
 
-  // Список страниц в порядке переключения
   const pages = [
     "./data-scientist.html",
     "./data-engineer.html",
@@ -10,17 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
     "./cpp-developer.html",
     "./fullstack-js.html",
     "./comparison.html",
-    "./index.html", // Добавляем главную страницу для зацикливания
+    "./index.html",
   ];
 
-  // Текущая страница
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-  // Находим индекс текущей страницы
   const currentIndex = pages.indexOf(`./${currentPage}`);
-  const nextIndex = (currentIndex + 1) % pages.length; // Следующий индекс с зацикливанием
+  const nextIndex = (currentIndex + 1) % pages.length;
 
-  // Обработчик клика
   nextButton.addEventListener("click", () => {
     window.location.href = pages[nextIndex];
   });
