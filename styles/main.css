@@ -578,7 +578,7 @@ strong {
 }
 
 .profession-card {
-  width: 300px;
+  width: 400px;
   background: rgba(46, 52, 54, 0.8);
   border-radius: 12px;
   padding: 1.5rem;
@@ -676,6 +676,66 @@ strong {
   animation: fadeIn 0.5s ease forwards 0.6s;
 }
 
+.param {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0.5rem 0;
+}
+
+.param-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.progress-circle {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: conic-gradient(
+    var(--color-accent) 0% calc(var(--progress) * 1%),
+    rgba(46, 52, 54, 0.8) calc(var(--progress) * 1%) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle::before {
+  content: attr(data-progress) "%";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: rgba(46, 52, 54, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-light-gray);
+}
+
+.param-value {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-accent);
+}
+
+.param-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-light-gray);
+  line-height: 1.4;
+}
+
 @media (max-width: 1024px) {
   .navbar {
     align-items: center;
@@ -688,6 +748,26 @@ strong {
 }
 
 @media (max-width: 768px) {
+  .param-title {
+    font-size: 16px;
+  }
+
+  .progress-circle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .progress-circle::before {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .param-value,
+  .param-text {
+    font-size: 12px;
+  }
+
   .profession-card {
     width: 100%;
     max-width: 300px;
@@ -828,6 +908,27 @@ strong {
 }
 
 @media (max-width: 480px) {
+  .param {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .param-title {
+    font-size: 14px;
+  }
+
+  .progress-circle {
+    width: 32px;
+    height: 32px;
+  }
+
+  .progress-circle::before {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+
   .profession-card {
     padding: 1rem;
   }
